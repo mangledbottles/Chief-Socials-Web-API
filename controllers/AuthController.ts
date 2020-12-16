@@ -1,4 +1,3 @@
-"use strict";
 import { connect } from "../config";
 import { Users } from "../entity/UsersEntity";
 
