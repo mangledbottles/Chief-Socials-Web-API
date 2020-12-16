@@ -1,10 +1,20 @@
-const router = require('express').Router();
+export {};
+let express = require("express");
+let router = express.Router();
 
-router.post('register', (req, res) => {
-    const { name, email, password } = req.params;
-    if(!name || !email || !password) res.status(400).json({ message: "Missing parameters" });
+const Auth = require("../controllers/AuthController.ts");
 
-    res.json({ message: "Account created" })
-})
+router.post("/register", (req, res) => {
+  // console.log(req.body);
+  Auth.createUser(req.body)
+    .then((user) => {
+      //   console.log(req);
+      res.json(user);
+    })
+    .catch((err) => {
+      //   console.log(req);
+      res.status(err.status || 500).json(err);
+    });
+});
 
 module.exports = router;
