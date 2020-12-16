@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.ts",
   "scripts": {
-    "serve": "nodemon app.ts"
+    "serve": "nodemon app.ts",
+    "server": "node app.ts"
   },
   "author": "contact@dermotobrien.me",
   "license": "ISC",
