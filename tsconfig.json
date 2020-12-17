@@ -6,6 +6,6 @@
     "moduleResolution": "node",
     "target": "es2018"
   },
-  "include": ["src/**/*"],
+  "include": ["**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]
 }
