@@ -27,7 +27,6 @@ export const config: ConnectionOptions = {
     database: process.env.SERVER_SQL_DATABASE,
     username: process.env.SERVER_SQL_USERNAME,
     password: process.env.SERVER_SQL_USERNAME,
-    host: "premium88.web-hosting.com",
     logging: false,
     synchronize: false,
   }),
