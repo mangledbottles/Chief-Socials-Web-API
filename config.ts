@@ -6,16 +6,7 @@ import {
   getConnection,
 } from "typeorm";
 
-// let {
-//   ConnectionOptions,
-//   Connection,
-//   createConnection,
-//   getConnection,
-// } = require("typeorm");
-
-// let reflectMd = require("reflect-metadata");
-
-// Will be true on deployed functions
+// Will be true on deployed server
 export const prod = process.env.NODE_ENV === "production";
 
 export const config: ConnectionOptions = {
