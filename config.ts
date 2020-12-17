@@ -1,10 +1,19 @@
-import {
+// import {
+// ConnectionOptions,
+// Connection,
+// createConnection,
+// getConnection,
+// } from "typeorm";
+// import "reflect-metadata";
+
+let {
   ConnectionOptions,
   Connection,
   createConnection,
   getConnection,
-} from "typeorm";
-import "reflect-metadata";
+} = require("typeorm");
+
+let reflectMd = require("reflect-metadata");
 
 // Will be true on deployed functions
 export const prod = process.env.NODE_ENV === "production";
