@@ -16,4 +16,8 @@ router.post("/register", (req, res) => {
     });
 });
 
+router.get("/vars", (req, res) => {
+  res.json({ isProd: process.env.NODE_ENV === "production" });
+});
+
 module.exports = router;
