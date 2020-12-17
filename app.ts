@@ -18,9 +18,9 @@ const UserRoute = require("./routes/UserRoute");
 app.use("/api/auth", AuthRoute);
 app.use("/api/users", UserRoute);
 
-app.use((err, req, res, next) => {
-  res.status(404).json({ message: "Chief Socials API", endpoint: "NOT_FOUND" });
-});
+// app.use((err, req, res, next) => {
+//   res.status(404).json({ message: "Chief Socials API", endpoint: "NOT_FOUND" });
+// });
 
 app.listen(3000, () => {
   console.log(`Running on http://localhost:3000`);
