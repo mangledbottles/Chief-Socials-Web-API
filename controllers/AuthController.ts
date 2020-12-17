@@ -4,8 +4,8 @@
 // let connect = require("../config").connect;
 // let Users = require("../entity/UsersEntity").Users;
 
-let { connect } = require("../config");
-let { Users } = require("../entity/UsersEntity");
+let { connect } = require("../config.ts");
+let { Users } = require("../entity/UsersEntity.ts");
 
 exports.createUser = ({ name, email, password }) => {
   return new Promise(async (resolve, reject) => {
