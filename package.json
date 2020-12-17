@@ -2,10 +2,10 @@
   "name": "chief-socials-api",
   "version": "1.0.0",
   "description": "",
-  "main": "app.ts",
+  "main": "app.js",
   "scripts": {
-    "serve": "nodemon app.ts",
-    "server": "node app.ts"
+    "serve": "nodemon app.js",
+    "server": "node app.js"
   },
   "author": "contact@dermotobrien.me",
   "license": "ISC",
