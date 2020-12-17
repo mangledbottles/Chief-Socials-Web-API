@@ -29,7 +29,7 @@ export const config: ConnectionOptions = {
   synchronize: true,
   logging: false,
   //entities: ["lib/entity/**/*.js"],
-  entities: ["entity/**/*.ts"],
+  entities: ["entity/**/*.js"],
 
   // Production Mode
   ...(prod && {
