@@ -1,10 +1,10 @@
+import "reflect-metadata";
 import {
   ConnectionOptions,
   Connection,
   createConnection,
   getConnection,
 } from "typeorm";
-import "reflect-metadata";
 
 // let {
 //   ConnectionOptions,
