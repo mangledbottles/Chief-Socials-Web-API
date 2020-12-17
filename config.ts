@@ -25,7 +25,7 @@ export const config: ConnectionOptions = {
   // entities: ["entity/**/*.ts"],
   entities: [
     // assuming _dirname is your project root
-    path.resolve(__dirname, "**/*.entity{.ts,.js}"),
+    path.resolve(__dirname, "entity/**/*{.ts,.js}"),
   ],
 
   // Production Mode
