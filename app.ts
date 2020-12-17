@@ -15,6 +15,13 @@ app.use(express.json());
 const AuthRoute = require("./routes/AuthRoute");
 const UserRoute = require("./routes/UserRoute");
 
+app.all("/", (req, res) => {
+  res.json({ message: "CHIEF SOCIALS API " });
+});
+
+app.all("/api", (req, res) => {
+  res.json({ message: " /api CHIEF SOCIALS API" });
+});
 app.use("/api/auth", AuthRoute);
 app.use("/api/users", UserRoute);
 
