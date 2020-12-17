@@ -22,7 +22,7 @@ export class Users extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column()
+  @Column("text", { nullable: true })
   @Length(3, 25)
   name: string;
 
