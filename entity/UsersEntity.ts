@@ -26,13 +26,13 @@ export class Users extends BaseEntity {
   @Length(3, 25)
   name: string;
 
-  @Column()
+  @Column("text", { nullable: true })
   email: string;
 
-  @Column()
+  @Column("text", { nullable: true })
   password: string;
 
-  @Column()
+  @Column("text", { nullable: true })
   createdAt: Date;
 
   @BeforeInsert()
