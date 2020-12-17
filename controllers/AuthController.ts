@@ -1,5 +1,11 @@
-import { connect } from "../config";
-import { Users } from "../entity/UsersEntity";
+// import { connect } from "../config";
+// import { Users } from "../entity/UsersEntity";
+
+// let connect = require("../config").connect;
+// let Users = require("../entity/UsersEntity").Users;
+
+let { connect } = require("../config");
+let { Users } = require("../entity/UsersEntity");
 
 exports.createUser = ({ name, email, password }) => {
   return new Promise(async (resolve, reject) => {
