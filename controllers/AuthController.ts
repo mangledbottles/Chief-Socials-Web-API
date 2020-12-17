@@ -7,6 +7,8 @@ exports.createUser = ({ name, email, password }) => {
       if (!name || !email || !password)
         reject({ status: 400, message: "Missing parameters" });
 
+      // console.log(Users);
+      resolve(Users);
       const connection = await connect();
       const repo = connection.getRepository(Users);
 
