@@ -22,8 +22,8 @@ export const config: ConnectionOptions = {
   synchronize: true,
   logging: false,
   //entities: ["lib/entity/**/*.js"],
-  // entities: ["entity/**/*.ts"],
-  entities: [__dirname + "/entity/*.js"],
+  entities: ["entity/**/*.ts"],
+  // entities: ["/entity/**/*.ts"],
 
   // Production Mode
   ...(prod && {
@@ -32,7 +32,7 @@ export const config: ConnectionOptions = {
     password: process.env.SERVER_SQL_USERNAME,
     logging: false,
     synchronize: false,
-    entities: [__dirname + "/entity/*.ts"],
+    entities: ["entity/**/*.js"],
   }),
 };
 
