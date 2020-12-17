@@ -6,6 +6,6 @@
     "moduleResolution": "node",
     "target": "es2018"
   },
-  "include": ["**/*"],
+  "include": ["**/*", "entity/**/*", "routes/**/*", "controllers/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]
 }
