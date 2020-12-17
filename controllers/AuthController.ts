@@ -1,5 +1,5 @@
-import { connect } from "../config.mjs";
-import { Users } from "../entity/UsersEntity.mjs";
+import { connect } from "../config";
+import { Users } from "../entity/UsersEntity";
 
 exports.createUser = ({ name, email, password }) => {
   return new Promise(async (resolve, reject) => {
