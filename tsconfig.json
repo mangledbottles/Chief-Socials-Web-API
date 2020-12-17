@@ -7,5 +7,5 @@
     "target": "es2018"
   },
   "include": ["**/*", "entity/**/*", "routes/**/*", "controllers/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts"]
+  "exclude": ["node_modules"]
 }
