@@ -19,6 +19,10 @@ app.all("/", (req, res) => {
   res.json({ message: "CHIEF SOCIALS API " });
 });
 
+app.all("/a/api", (req, res) => {
+  res.json({ message: "Yup its like this" });
+});
+
 app.all("/api", (req, res) => {
   res.json({ message: " /api CHIEF SOCIALS API" });
 });
