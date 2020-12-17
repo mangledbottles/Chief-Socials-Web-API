@@ -32,7 +32,7 @@ export const config: ConnectionOptions = {
     password: process.env.SERVER_SQL_USERNAME,
     logging: false,
     synchronize: false,
-    entities: ["./entity/**/*.js"],
+    entities: ["entity/**/*.js"],
   }),
 };
 
