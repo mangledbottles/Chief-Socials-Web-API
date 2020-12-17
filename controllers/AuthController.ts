@@ -1,12 +1,6 @@
 import { connect } from "../config";
 import { Users } from "../entity/UsersEntity";
 
-// let connect = require("../config").connect;
-// let Users = require("../entity/UsersEntity").Users;
-
-// var { connect } = require("../config.ts");
-// var { Users } = require("../entity/UsersEntity.ts");
-
 exports.createUser = ({ name, email, password }) => {
   return new Promise(async (resolve, reject) => {
     try {
@@ -24,8 +18,6 @@ exports.createUser = ({ name, email, password }) => {
       const savedUser = await repo.save(newUser);
 
       resolve(savedUser);
-      //   console.log(connection);
-      //   resolve({ message: "Account created" });
     } catch (error) {
       reject(error);
     }
