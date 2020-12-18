@@ -7,6 +7,8 @@ import {
   getRepository,
 } from "typeorm";
 
+import { Users } from "./entity/UsersEntity";
+
 // Will be true on deployed server
 export const prod = process.env.NODE_ENV === "production";
 
@@ -32,7 +34,7 @@ export const config: ConnectionOptions = {
     logging: false,
     synchronize: false,
     // entities: ["entity/UsersEntity.ts", "entity/UsersEntity.js"],
-    entities: ["entity/**/*.js"],
+    entities: [Users],
   }),
 };
 
