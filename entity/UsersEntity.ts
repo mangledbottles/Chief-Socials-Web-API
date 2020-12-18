@@ -18,7 +18,7 @@ import {
 } from "class-validator";
 
 @Entity()
-export class Users {
+export class Users extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number;
 

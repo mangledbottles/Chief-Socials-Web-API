@@ -11,6 +11,8 @@ app.use(
 app.use(logger("dev"));
 app.use(express.json());
 
+import "reflect-metadata";
+
 /** All routes */
 const AuthRoute = require("./routes/AuthRoute");
 const UserRoute = require("./routes/UserRoute");
