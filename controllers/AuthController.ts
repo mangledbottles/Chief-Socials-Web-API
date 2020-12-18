@@ -1,5 +1,5 @@
-import { resolveProjectReferencePath } from "typescript";
 import { connect } from "../config";
+import { Users } from "../entity/UsersEntity";
 
 exports.createUser = ({ name, email, password }) => {
   return new Promise(async (resolve, reject) => {
