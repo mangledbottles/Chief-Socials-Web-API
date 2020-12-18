@@ -26,6 +26,7 @@ exports.createUser = ({ name, email, password }) => {
       // reject(err);
       // });
     } catch (error) {
+      console.error(error);
       reject(error);
     }
   });
