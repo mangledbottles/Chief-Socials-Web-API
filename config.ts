@@ -44,6 +44,7 @@ export const connect = async () => {
     connection = getConnection(config.name);
   } catch (err) {
     connection = await createConnection(config);
+    console.error(err);
   }
 
   return connection;
