@@ -1,5 +1,5 @@
-import { connect } from "../config";
 import { Users } from "../entity/UsersEntity";
+import { connect } from "../config";
 
 exports.createUser = ({ name, email, password }) => {
   return new Promise(async (resolve, reject) => {
