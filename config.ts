@@ -6,8 +6,6 @@ import {
   getConnection,
 } from "typeorm";
 
-import * as path from "path";
-
 // Will be true on deployed server
 export const prod = process.env.NODE_ENV === "production";
 
@@ -22,7 +20,7 @@ export const config: ConnectionOptions = {
   synchronize: true,
   logging: false,
   //entities: ["lib/entity/**/*.js"],
-  entities: ["entity/**/*.js"],
+  entities: ["entity/**/*.ts"],
   // entities: ["/entity/**/*.ts"],
 
   // Production Mode
@@ -32,8 +30,8 @@ export const config: ConnectionOptions = {
     password: process.env.SERVER_SQL_PASSWORD,
     logging: false,
     synchronize: false,
-    entities: ["entity/UsersEntity.ts", "entity/UsersEntity.js"],
-    // entities: ["entity/**/*.js"],
+    // entities: ["entity/UsersEntity.ts", "entity/UsersEntity.js"],
+    entities: ["entity/**/*.js"],
   }),
 };
 
@@ -46,6 +44,7 @@ export const connect = async () => {
     connection = await createConnection(config);
     console.error(err);
   }
+  console.log(connection);
 
   return connection;
 };
