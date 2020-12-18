@@ -29,7 +29,7 @@ export const config: ConnectionOptions = {
   ...(prod && {
     database: process.env.SERVER_SQL_DATABASE,
     username: process.env.SERVER_SQL_USERNAME,
-    password: process.env.SERVER_SQL_USERNAME,
+    password: process.env.SERVER_SQL_PASSWORD,
     logging: false,
     synchronize: false,
     entities: ["entity/UsersEntity.ts", "entity/UsersEntity.js"],
