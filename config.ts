@@ -41,8 +41,7 @@ export const connect = async () => {
   let connection: Connection;
 
   try {
-    connection = getConnection(config.name);
-    console.log(connection);
+    connection = await getConnection(config.name);
   } catch (err) {
     connection = await createConnection(config);
   }
