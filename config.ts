@@ -4,6 +4,7 @@ import {
   Connection,
   createConnection,
   getConnection,
+  getRepository,
 } from "typeorm";
 
 // Will be true on deployed server
