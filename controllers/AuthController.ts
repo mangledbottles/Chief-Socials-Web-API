@@ -7,7 +7,7 @@ exports.createUser = ({ name, email, password }) => {
     try {
       if (!name || !email || !password)
         reject({ status: 400, message: "Missing parameters" });
-      console.log(Users);
+      console.log(Users.toString());
       const connection = await connect();
       // connect()
       // .then(async (connection) => {
