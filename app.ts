@@ -27,6 +27,6 @@ app.use((err, req, res, next) => {
   res.status(404).json({ message: "Chief Socials API", endpoint: "NOT_FOUND" });
 });
 
-app.listen(8080, () => {
+app.listen(80, () => {
   console.log(`Running on http://localhost:8080`);
 });
